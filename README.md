@@ -19,7 +19,7 @@ The whole idea of a crypto tumbler heavily levies Zero Knowledge techniques (and
 
 zk-SNARKs (Zero-Knowledge Succinct Non-interactive ARguments of Knowledge) are essentially short proofs that "prove" a fact about something through a series of mathematical calculations. zk-SNARKs generally require quadratic constraints and as such, you are only able to express them in a limited number of ways. Generally, SNARKs are suitable for solving what are called `NP` problems - problems that can be easily proven, but not easily computed.
 
-The whole idea underpinning ZK is that by making a number of mathematical calculations under some quadratic constraints, you can essentially prove a fact about something with pure maths without revealing what the thing itself is. Check out the Circom circuits in the `circuit` folder if you're interested in the actual circuitry, but primarily speaking it mostly follows this logic:
+Check out the Circom circuits in the `circuit` folder if you're interested in the actual circuitry, but primarily speaking it mostly follows this logic:
 - Get a leaf, a root, an element path and an indices path
 - We then prove that these inputs lead to a given outcome
   - In this case, we compute what the new merkle root should be (by traversing the merkle tree and hashing each pair of leaves) and check if it is equal or not to the new merkle root
