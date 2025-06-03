@@ -1,0 +1,12 @@
+/target
+
+## Circom related stuff
+node_modules/
+main_js/
+circuit_0000.zkey
+main.r1cs
+verification_key.json
+generated_proof.json
+generated_public.json
+proof_inputs.json
+powersOfTau*
